@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trailer Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="TrailerScreenViewController" storyboardIdentifier="TrailerScreenViewController" id="Y6W-OH-hqX" customClass="TrailerScreenViewController" customModule="MovieNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmR-gM-TWr">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8O-GA-6Xf">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </webView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwL-kh-rDj">
+                                        <rect key="frame" x="353" y="16" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="Ejr-fv-R0P"/>
+                                            <constraint firstAttribute="width" secondItem="qwL-kh-rDj" secondAttribute="height" multiplier="1:1" id="V96-U7-Bwe"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="backDetal:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tes-Wz-uaZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="U8O-GA-6Xf" firstAttribute="top" secondItem="lmR-gM-TWr" secondAttribute="top" id="34a-Rm-8ha"/>
+                                    <constraint firstItem="qwL-kh-rDj" firstAttribute="top" secondItem="lmR-gM-TWr" secondAttribute="top" constant="16" id="OzP-ID-f9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="U8O-GA-6Xf" secondAttribute="trailing" id="TSz-RX-7YO"/>
+                                    <constraint firstAttribute="bottom" secondItem="U8O-GA-6Xf" secondAttribute="bottom" id="TZ0-Vk-Ta4"/>
+                                    <constraint firstAttribute="trailing" secondItem="qwL-kh-rDj" secondAttribute="trailing" constant="16" id="hcQ-EE-9yy"/>
+                                    <constraint firstItem="U8O-GA-6Xf" firstAttribute="leading" secondItem="lmR-gM-TWr" secondAttribute="leading" id="m77-Z1-nMy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lmR-gM-TWr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="AuX-DQ-3DK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lmR-gM-TWr" secondAttribute="trailing" id="Eld-ua-dTu"/>
+                            <constraint firstItem="lmR-gM-TWr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NXS-04-d7O"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lmR-gM-TWr" secondAttribute="bottom" id="Uqd-vK-vLh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="qwL-kh-rDj" id="Wdm-na-sTI"/>
+                        <outlet property="playVideoView" destination="lmR-gM-TWr" id="0MR-wG-8gq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

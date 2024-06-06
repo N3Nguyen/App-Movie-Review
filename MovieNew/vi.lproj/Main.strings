@@ -1,0 +1,198 @@
+
+/* Class = "UILabel"; text = "Watchlist"; ObjectID = "0L8-sZ-wzG"; */
+"0L8-sZ-wzG.text" = "Watchlist";
+
+/* Class = "UIButton"; configuration.title = "Apply"; ObjectID = "2m3-EO-v7k"; */
+"2m3-EO-v7k.configuration.title" = "Apply";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2m3-EO-v7k"; */
+"2m3-EO-v7k.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "2yl-sc-V6R"; */
+"2yl-sc-V6R.text" = "...";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3IK-NH-NEh"; */
+"3IK-NH-NEh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Apple"; ObjectID = "4gb-44-Txv"; */
+"4gb-44-Txv.text" = "Apple";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4rQ-HH-Jhp"; */
+"4rQ-HH-Jhp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6qg-Xf-JwT"; */
+"6qg-Xf-JwT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "82r-ip-4pa"; */
+"82r-ip-4pa.text" = "Profile";
+
+/* Class = "UILabel"; text = "Rate & review"; ObjectID = "9ah-h5-zuM"; */
+"9ah-h5-zuM.text" = "Rate & review";
+
+/* Class = "UILabel"; text = "Apple"; ObjectID = "A3u-d8-TAb"; */
+"A3u-d8-TAb.text" = "Apple";
+
+/* Class = "UILabel"; text = "Up Comming"; ObjectID = "A4M-5d-fn7"; */
+"A4M-5d-fn7.text" = "Up Comming";
+
+/* Class = "UIButton"; normalTitle = "Login now"; ObjectID = "BSD-0F-ZCE"; */
+"BSD-0F-ZCE.normalTitle" = "Login now";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "BXu-VA-xvi"; */
+"BXu-VA-xvi.placeholder" = "Search";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "I5w-vU-a4Y"; */
+"I5w-vU-a4Y.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "M2m-3R-OZv"; */
+"M2m-3R-OZv.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "M5Y-JL-bIQ"; */
+"M5Y-JL-bIQ.configuration.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "M5Y-JL-bIQ"; */
+"M5Y-JL-bIQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "M8S-pi-UBn"; */
+"M8S-pi-UBn.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Book Now"; ObjectID = "Mz7-00-BI0"; */
+"Mz7-00-BI0.configuration.title" = "Book Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Mz7-00-BI0"; */
+"Mz7-00-BI0.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "   Enter username"; ObjectID = "N6n-RH-EZ3"; */
+"N6n-RH-EZ3.placeholder" = "   Enter username";
+
+/* Class = "UILabel"; text = "Choose categories"; ObjectID = "Nqj-Tz-tYM"; */
+"Nqj-Tz-tYM.text" = "Choose categories";
+
+/* Class = "UILabel"; text = "or login with"; ObjectID = "OHd-wb-dox"; */
+"OHd-wb-dox.text" = "or login with";
+
+/* Class = "UILabel"; text = "Playing"; ObjectID = "OSA-xN-CML"; */
+"OSA-xN-CML.text" = "Playing";
+
+/* Class = "UIButton"; configuration.title = "Apply"; ObjectID = "R4f-Sd-g3T"; */
+"R4f-Sd-g3T.configuration.title" = "Apply";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "R4f-Sd-g3T"; */
+"R4f-Sd-g3T.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Register now"; ObjectID = "SQH-Wg-5nH"; */
+"SQH-Wg-5nH.normalTitle" = "Register now";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "SeC-XK-MKw"; */
+"SeC-XK-MKw.text" = "...";
+
+/* Class = "UILabel"; text = "Facebook"; ObjectID = "TlE-Mn-SGU"; */
+"TlE-Mn-SGU.text" = "Facebook";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tq1-pW-FZH"; */
+"Tq1-pW-FZH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Categories"; ObjectID = "Udv-BS-G4p"; */
+"Udv-BS-G4p.text" = "Categories";
+
+/* Class = "UILabel"; text = "or login with"; ObjectID = "UlM-WM-yXF"; */
+"UlM-WM-yXF.text" = "or login with";
+
+/* Class = "UILabel"; text = "Not a member? "; ObjectID = "UzY-ba-4T6"; */
+"UzY-ba-4T6.text" = "Not a member? ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VYJ-Xh-Oht"; */
+"VYJ-Xh-Oht.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VZI-vd-LVN"; */
+"VZI-vd-LVN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VcL-QG-ibl"; */
+"VcL-QG-ibl.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xsg-7U-VSV"; */
+"Xsg-7U-VSV.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Y01-EI-VSw"; */
+"Y01-EI-VSw.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "aQm-Io-Imz"; */
+"aQm-Io-Imz.configuration.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aQm-Io-Imz"; */
+"aQm-Io-Imz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Lastes"; ObjectID = "aTV-Cv-GYm"; */
+"aTV-Cv-GYm.text" = "Lastes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "alX-oE-qoM"; */
+"alX-oE-qoM.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "bKz-US-37r"; */
+"bKz-US-37r.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bKz-US-37r"; */
+"bKz-US-37r.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cDT-wO-dPK"; */
+"cDT-wO-dPK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Facebook"; ObjectID = "e2e-OD-5PL"; */
+"e2e-OD-5PL.text" = "Facebook";
+
+/* Class = "UILabel"; text = "Welcome to myMovie!"; ObjectID = "ei2-25-uvD"; */
+"ei2-25-uvD.text" = "Welcome to myMovie!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ezz-4K-O15"; */
+"ezz-4K-O15.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f8q-fg-OZc"; */
+"f8q-fg-OZc.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose categories"; ObjectID = "f9f-fM-Lht"; */
+"f9f-fM-Lht.text" = "Choose categories";
+
+/* Class = "UILabel"; text = "Welcome to myMovie!"; ObjectID = "flB-in-MMH"; */
+"flB-in-MMH.text" = "Welcome to myMovie!";
+
+/* Class = "UILabel"; text = "Genres"; ObjectID = "gRg-5c-GaG"; */
+"gRg-5c-GaG.text" = "Genres";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gni-Kz-Tgb"; */
+"gni-Kz-Tgb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "hLd-jq-WIJ"; */
+"hLd-jq-WIJ.text" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iXh-nY-W8B"; */
+"iXh-nY-W8B.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "jla-XI-D9q"; */
+"jla-XI-D9q.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jla-XI-D9q"; */
+"jla-XI-D9q.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Popular"; ObjectID = "jmv-2x-Dqh"; */
+"jmv-2x-Dqh.text" = "Popular";
+
+/* Class = "UILabel"; text = "Not a member? "; ObjectID = "laO-Np-FbA"; */
+"laO-Np-FbA.text" = "Not a member? ";
+
+/* Class = "UILabel"; text = "Swipe or tap a Star to Rate"; ObjectID = "qe4-4a-Jl3"; */
+"qe4-4a-Jl3.text" = "Swipe or tap a Star to Rate";
+
+/* Class = "UILabel"; text = "A review by HieuVH4"; ObjectID = "qhS-8s-NKB"; */
+"qhS-8s-NKB.text" = "A review by HieuVH4";
+
+/* Class = "UIButton"; configuration.title = "Register"; ObjectID = "vHS-H6-fUx"; */
+"vHS-H6-fUx.configuration.title" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vHS-H6-fUx"; */
+"vHS-H6-fUx.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "   Enter password"; ObjectID = "xPi-IO-ClB"; */
+"xPi-IO-ClB.placeholder" = "   Enter password";
+
+/* Class = "UILabel"; text = "Now Playing"; ObjectID = "y2s-Qy-wN0"; */
+"y2s-Qy-wN0.text" = "Now Playing";

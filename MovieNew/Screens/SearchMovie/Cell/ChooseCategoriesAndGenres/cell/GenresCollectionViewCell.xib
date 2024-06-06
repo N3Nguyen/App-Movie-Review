@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenresCollectionViewCell" customModule="MovieNew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="84"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWJ-Yt-3AG">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-wD-pWa">
+                                <rect key="frame" x="12" y="6" width="264" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yGJ-wD-pWa" secondAttribute="bottom" constant="6" id="0uB-pF-fNj"/>
+                            <constraint firstItem="yGJ-wD-pWa" firstAttribute="leading" secondItem="SWJ-Yt-3AG" secondAttribute="leading" constant="12" id="JUd-gt-WCi"/>
+                            <constraint firstItem="yGJ-wD-pWa" firstAttribute="top" secondItem="SWJ-Yt-3AG" secondAttribute="top" constant="6" id="ef1-ti-eAN"/>
+                            <constraint firstAttribute="trailing" secondItem="yGJ-wD-pWa" secondAttribute="trailing" constant="12" id="sW4-a7-N6e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SWJ-Yt-3AG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4uf-nA-28q"/>
+                <constraint firstAttribute="trailing" secondItem="SWJ-Yt-3AG" secondAttribute="trailing" id="4yF-bT-eve"/>
+                <constraint firstItem="SWJ-Yt-3AG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oaH-3e-vQJ"/>
+                <constraint firstAttribute="bottom" secondItem="SWJ-Yt-3AG" secondAttribute="bottom" id="x0R-bQ-fW3"/>
+            </constraints>
+            <size key="customSize" width="288" height="84"/>
+            <connections>
+                <outlet property="homeViewCell" destination="SWJ-Yt-3AG" id="2Cb-A8-dFA"/>
+                <outlet property="titleGenresLabel" destination="yGJ-wD-pWa" id="BWp-D3-yQR"/>
+            </connections>
+            <point key="canvasLocation" x="201.52671755725191" y="0.70422535211267612"/>
+        </collectionViewCell>
+    </objects>
+</document>
