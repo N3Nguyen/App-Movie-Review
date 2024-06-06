@@ -1,4 +1,4 @@
-# iOS Movie Listings App
+# iOS App Movie Review
 
 ### This app uses UIViews, UITableViews, UICollectionView NavigationController and other Swift MVC features to show all the movies present in the TMDB.
 ### It connects with the TMDB dev API and shows the movie details with posters and pictures on the go.
