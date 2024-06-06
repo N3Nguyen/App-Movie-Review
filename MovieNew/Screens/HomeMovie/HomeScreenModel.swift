@@ -2,7 +2,7 @@
 //  HomeScreenModel.swift
 //  MovieNew
 //
-//  Created by QuocTN on 03/10/2023.
+//  Created by QuocTN on 03/12/2023.
 //
 
 import Foundation
@@ -11,12 +11,12 @@ class HomeScreenModel: NSObject {
     // MARK: Model default closure, remove if unused
     var listTrendingData: ListMovies?
     var listCommingSoonData: ListMovies?
+    var listGenresData: ListGenresResponseEntity?
     
     var onGetDataFail: ((_ error: NetworkServiceError) -> Void)?
     var onGetDataSuccess: (() -> Void)?
-    private var trendingURL = "https://api.themoviedb.org/3/trending/all/day?api_key=2a42783543e233df8a3369e3ce9b9019&page="
-    private var commingSoonURL = "https://api.themoviedb.org/3/movie/upcoming?api_key=2a42783543e233df8a3369e3ce9b9019&page="
-    func getHomeTrendingMovie() {
+    
+    func getHomeTrendingMovie(onSucess: @escaping() -> Void, onFail: @escaping() -> Void) {
         let homeMovieURL: String = "\(ServerConstants.baseURL)\(ServerConstants.trendingList)"
         let params = [DetailRequestEntity.apiKey : ServerConstants.apiKey]
         APIHelpers.shared.requestGET(url: homeMovieURL, params: params) { success, data in
@@ -25,18 +25,18 @@ class HomeScreenModel: NSObject {
                     do {
                         let model = try JSONDecoder().decode(ListMovies.self, from: data!)
                         self.listTrendingData = model
-                        self.onGetDataSuccess?()
+                        onSucess()
                     } catch {
-                        self.onGetDataFail?(.decodeError)
+                        onFail()
                     }
                 } else {
-                    self.onGetDataFail?(.decodeError)
+                    onFail()
                 }
             }
         }
     }
     
-    func getHomeCommingSoonMovie() {
+    func getHomeCommingSoonMovie(onSucess: @escaping() -> Void, onFail: @escaping() -> Void) {
         let homeMovieURL: String = "\(ServerConstants.baseURL)\(ServerConstants.commingSoonList)"
         let params = [DetailRequestEntity.apiKey : ServerConstants.apiKey]
         APIHelpers.shared.requestGET(url: homeMovieURL, params: params) { success, data in
@@ -45,13 +45,71 @@ class HomeScreenModel: NSObject {
                     do {
                         let model = try JSONDecoder().decode(ListMovies.self, from: data!)
                         self.listCommingSoonData = model
-                        self.onGetDataSuccess?()
+                        onSucess()
                     } catch {
-                        self.onGetDataFail?(.decodeError)
+                        onFail()
                     }
                 } else {
-                    self.onGetDataFail?(.decodeError)
+                    onFail()
                 }
+            }
+        }
+    }
+    
+    func getListGenres(onSucess: @escaping() -> Void, onFail: @escaping() -> Void) {
+        let genresMovieURL: String = "\(ServerConstants.baseURL)\(ServerConstants.genresList)"
+        let params = [DetailRequestEntity.apiKey : ServerConstants.apiKey]
+        APIHelpers.shared.requestGET(url: genresMovieURL, params: params) { success, data in
+            DispatchQueue.main.async {
+                if success {
+                    do {
+                        let model = try JSONDecoder().decode(ListGenresResponseEntity.self, from: data!)
+                        self.listGenresData = model
+                        onSucess()
+                    } catch {
+                        onFail()
+                    }
+                } else {
+                    onFail()
+                }
+            }
+        }
+    }
+    
+    func requestMainData(){
+        let dispatchGroup: DispatchGroup = DispatchGroup()
+        var onGetDataFail: NetworkServiceError?
+        
+        dispatchGroup.enter()
+        self.getHomeTrendingMovie {
+            dispatchGroup.leave()
+        } onFail: {
+            onGetDataFail = .decodeError
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        self.getHomeCommingSoonMovie {
+            dispatchGroup.leave()
+        } onFail: {
+            onGetDataFail = .decodeError
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        self.getListGenres {
+            dispatchGroup.leave()
+        } onFail: {
+            onGetDataFail = .decodeError
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.notify(queue: .main) {
+            self.onGetDataSuccess?()
+            
+            var appError = onGetDataFail
+            if let error = appError {
+                self.onGetDataFail?(error)
             }
         }
     }

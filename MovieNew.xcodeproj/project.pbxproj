@@ -11,7 +11,6 @@
 		C809D29F2ACC3065000B7301 /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D29E2ACC3065000B7301 /* AppScreen.swift */; };
 		C809D2A22ACC30FF000B7301 /* UITableViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D2A12ACC30FF000B7301 /* UITableViewExtention.swift */; };
 		C809D2A62ACC6FC3000B7301 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D2A52ACC6FC3000B7301 /* BaseViewController.swift */; };
-		C809D2A92ACC7002000B7301 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D2A82ACC7002000B7301 /* HomeScreenModel.swift */; };
 		C809D2AC2ACC745E000B7301 /* ColorDefile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D2AB2ACC745E000B7301 /* ColorDefile.swift */; };
 		C809D2AE2ACC7486000B7301 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D2AD2ACC7486000B7301 /* ColorExtention.swift */; };
 		C809D2B02ACC7505000B7301 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809D2AF2ACC7505000B7301 /* Constants.swift */; };
@@ -60,6 +59,7 @@
 		C8783E752BC149AA00432EA7 /* TabbarControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8783E742BC149AA00432EA7 /* TabbarControll.swift */; };
 		C89506CB2B17677F0000B6BA /* CategoryGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89506CA2B17677F0000B6BA /* CategoryGenres.swift */; };
 		C89506CD2B1783850000B6BA /* UICollectionFlowLayoutExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89506CC2B1783850000B6BA /* UICollectionFlowLayoutExtention.swift */; };
+		C8A322E72C11FE5800CE3D28 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A322E62C11FE5800CE3D28 /* HomeScreenModel.swift */; };
 		C8A843C92BC94C0700A29038 /* TrailerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A843C82BC94C0700A29038 /* TrailerScreen.storyboard */; };
 		C8A843CB2BC94C3200A29038 /* TrailerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A843CA2BC94C3200A29038 /* TrailerScreenViewController.swift */; };
 		C8A843CD2BC9765100A29038 /* TrailerMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A843CC2BC9765100A29038 /* TrailerMovieModel.swift */; };
@@ -117,7 +117,6 @@
 		C809D29E2ACC3065000B7301 /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
 		C809D2A12ACC30FF000B7301 /* UITableViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtention.swift; sourceTree = "<group>"; };
 		C809D2A52ACC6FC3000B7301 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		C809D2A82ACC7002000B7301 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenModel.swift; path = ../../../../../../Applications/HomeScreenModel.swift; sourceTree = "<group>"; };
 		C809D2AB2ACC745E000B7301 /* ColorDefile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefile.swift; sourceTree = "<group>"; };
 		C809D2AD2ACC7486000B7301 /* ColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		C809D2AF2ACC7505000B7301 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -166,6 +165,7 @@
 		C8783E742BC149AA00432EA7 /* TabbarControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarControll.swift; sourceTree = "<group>"; };
 		C89506CA2B17677F0000B6BA /* CategoryGenres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryGenres.swift; sourceTree = "<group>"; };
 		C89506CC2B1783850000B6BA /* UICollectionFlowLayoutExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionFlowLayoutExtention.swift; sourceTree = "<group>"; };
+		C8A322E62C11FE5800CE3D28 /* HomeScreenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
 		C8A843C82BC94C0700A29038 /* TrailerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrailerScreen.storyboard; sourceTree = "<group>"; };
 		C8A843CA2BC94C3200A29038 /* TrailerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerScreenViewController.swift; sourceTree = "<group>"; };
 		C8A843CC2BC9765100A29038 /* TrailerMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerMovieModel.swift; sourceTree = "<group>"; };
@@ -433,7 +433,7 @@
 			children = (
 				C809D2A72ACC6FDA000B7301 /* Cells */,
 				C82D20332AB074FF006A7C6C /* HomeMovieViewController.swift */,
-				C809D2A82ACC7002000B7301 /* HomeScreenModel.swift */,
+				C8A322E62C11FE5800CE3D28 /* HomeScreenModel.swift */,
 			);
 			path = HomeMovie;
 			sourceTree = "<group>";
@@ -860,7 +860,6 @@
 				C8111CE62AB4A99C003EC5B3 /* DiscoverMovieCollectionViewCell.swift in Sources */,
 				C8DFC2642AB75DC5007B7559 /* UserTableViewCell.swift in Sources */,
 				C8DFC2832ABB02E7007B7559 /* CategoryGenresTableViewCell.swift in Sources */,
-				C809D2A92ACC7002000B7301 /* HomeScreenModel.swift in Sources */,
 				C8A843CF2BC9776400A29038 /* ListMovieTrailerEntity.swift in Sources */,
 				C8150FF32B09DFCF00B31683 /* ListCategoryResponseEntity.swift in Sources */,
 				C8C1492E2AAF408800679B4B /* SceneDelegate.swift in Sources */,
@@ -869,6 +868,7 @@
 				C8150FE62B09DC2100B31683 /* StringExtention.swift in Sources */,
 				C8DFC2732AB861E2007B7559 /* SearchMovieViewController.swift in Sources */,
 				C850A44A2AC437A800818368 /* CategoryModel.swift in Sources */,
+				C8A322E72C11FE5800CE3D28 /* HomeScreenModel.swift in Sources */,
 				C81375022B5BEEA0003BB6B4 /* ChooseGenresViewController.swift in Sources */,
 				C82D20302AAF7295006A7C6C /* RegisterViewController.swift in Sources */,
 				C809D2B02ACC7505000B7301 /* Constants.swift in Sources */,
